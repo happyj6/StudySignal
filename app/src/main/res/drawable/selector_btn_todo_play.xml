@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 정지버튼 -->
+    <item android:drawable="@drawable/revise" android:state_enabled="true"></item>
+
+    <!-- 플레이버튼 -->
+    <item android:drawable="@drawable/remove" android:state_enabled="false"></item>
+    <item android:drawable="@drawable/remove" ></item>
+</selector>

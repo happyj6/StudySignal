@@ -1,43 +1,50 @@
 package com.capstone.studysignal.ui.todo
 
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import com.capstone.studysignal.R
+import com.capstone.studysignal.databinding.ActivityMainBinding
+import java.time.LocalDate
+import com.capstone.studysignal.databinding.FragmentTodoBinding
+import java.time.format.DateTimeFormatter
 
 class Todo : Fragment() {
+    lateinit var binding : FragmentTodoBinding
 
-    private var param1: String? = null
-    private var param2: String? = null
+    @RequiresApi(Build.VERSION_CODES.O)
+    var onlyDate : LocalDate = LocalDate.now()
+    @RequiresApi(Build.VERSION_CODES.O)
+    var StrOnlyDate = onlyDate.format(DateTimeFormatter.ofPattern("yyyy-mm-dd"))
 
-    companion object {
-        private const val ARG_PARAM1 = "param1"
-        private const val ARG_PARAM2 = "param2"
-
-        fun newInstance(param1: String, param2: String) =
-            Todo().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_todo, container, false)
+
+        val binding = FragmentTodoBinding.inflate(inflater, container, false)
+        binding.barTopTodo.text = StrOnlyDate
+        val view = binding.root
+        return view
+
+        binding.subjectIB
+
+
+
+
+        //두번째 방법
+        //val date = String.format(getString(R.string.time_date), "1", "30")
+        //1시간 30분
+
+
     }
+
+
+
 
 }

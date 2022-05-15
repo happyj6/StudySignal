@@ -5,19 +5,23 @@
       <map>
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.248" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/drawable/ic_launcher_background.xml" value="0.248" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/drawable/selector_btn_todo_play.xml" value="0.163" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/drawable/setting.xml" value="0.248" />
-        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/activity_signup.xml" value="0.2" />
-        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/activity_subject.xml" value="0.25" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/activity_subject.xml" value="0.4" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/content_login.xml" value="0.2390625" />
-        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_calendar.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_add_subject.xml" value="0.264" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_calendar.xml" value="0.2" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_item_list.xml" value="0.2390625" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_second.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_setting.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_setting.xml" value="0.2" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_statistics.xml" value="0.2" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_study.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_todo.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/fragment_todo.xml" value="0.4" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/list_item_todo.xml" value="0.264" />
+        <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/list_subject.xml" value="0.536" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/layout/switch_item.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/menu/menu_bottomnavigation.xml" value="0.1" />
         <entry key="..\:/Users/lovem/AndroidStudioProjects/StudySignal/app/src/main/res/menu/menu_bottomnavigationview.xml" value="0.264" />

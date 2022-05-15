@@ -14,7 +14,46 @@
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/reviseIb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/revise"
+        app:layout_constraintTop_toBottomOf="@id/barTopSubject"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/deleteIb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete"
+        app:layout_constraintTop_toBottomOf="@id/barTopSubject"
+        app:layout_constraintRight_toLeftOf="@id/reviseIb"
+        android:backgroundTint="@color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/addIb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        app:layout_constraintTop_toBottomOf="@id/barTopSubject"
+        app:layout_constraintRight_toLeftOf="@id/deleteIb"
+        android:backgroundTint="@color/white"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/addIb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

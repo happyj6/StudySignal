@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.capstone.studysignal.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first" >
+        android:name="com.capstone.studysignal.ui.todo.Todo"
+        android:label="TODO"
+        tools:layout="@layout/fragment_todo" >
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -17,12 +17,45 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.capstone.studysignal.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second" >
+        android:name="com.capstone.studysignal.ui.calendar.calendar"
+        android:label="CALENDAR"
+        tools:layout="@layout/fragment_calendar" >
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.capstone.studysignal.ui.statistics.statistics"
+        android:label="statistics"
+        tools:layout="@layout/fragment_statistics" >
+
+        <action
+            android:id="@+id/action_ThirdFragment_to_FourthFragment"
+            app:destination="@id/FourthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FourthFragment"
+        android:name="com.capstone.studysignal.ui.study.study"
+        android:label="STUDY"
+        tools:layout="@layout/fragment_study" >
+
+        <action
+            android:id="@+id/action_FourthFragment_to_FifthFragment"
+            app:destination="@id/FifthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FifthFragment"
+        android:name="com.capstone.studysignal.ui.setting.setting"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" >
+
+
+    </fragment>
+
+
 </navigation>

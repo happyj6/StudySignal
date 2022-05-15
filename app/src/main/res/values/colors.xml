@@ -10,4 +10,5 @@
     <color name="pink100">#FFC4E9</color>
     <color name="gray100">#B3B0B0</color>
     <color name="maincolr">#E87C7C</color>
+    <color name="transparent">#00000000</color>
 </resources>
