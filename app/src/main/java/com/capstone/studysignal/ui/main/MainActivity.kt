@@ -11,21 +11,16 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.capstone.studysignal.R
 import com.capstone.studysignal.databinding.ActivityMainBinding
+import com.capstone.studysignal.ui.calendar.Calendar
+import com.capstone.studysignal.ui.setting.Setting
+import com.capstone.studysignal.ui.statistics.Statistics
+import com.capstone.studysignal.ui.study.Study
 import com.capstone.studysignal.ui.todo.Todo
+import java.util.*
 
 // 생명주기 = lifeCycle
 class MainActivity : AppCompatActivity() {
 
-
-
-
-    /**
-     *
-     * 1. 뷰바인딩으로 xml의 id를 연결해서 쓸 수 있게 만든다.
-     * 2. 바텀뷰의 id 값을 얻어서, 클릭 리스너를 만든다.
-     * 3. 클릭 리스너에서 콜백(함수)에서 포지션에 맞게 해당하는 프레그먼트를 실행시킨다.
-     *
-     */
 
     lateinit var binding : ActivityMainBinding
 
@@ -58,25 +53,47 @@ class MainActivity : AppCompatActivity() {
             Log.d("happy","position : $position")
             if(position == MENU.TODO.value) {
                 Log.d("happy","create todo fragment ")
+                setFrag(0)
             } else if(position == MENU.CALENDER.value) {
                 Log.d("happy","create calendar fragment ")
-                setContentView(R.layout.fragment_todo)
+                setFrag(1)
             } else if(position == MENU.STATISTICS.value) {
                 Log.d("happy","create statistics fragment ")
-                setContentView(R.layout.fragment_statistics)
+                setFrag(2)
             } else if(position == MENU.STUDY.value) {
                 Log.d("happy","create study fragment ")
-                setContentView(R.layout.fragment_study)
+                setFrag(3)
             } else if(position == MENU.SETTING.value) {
                 Log.d("happy","create setting fragment ")
-                setContentView(R.layout.fragment_setting)
+                setFrag(4)
             }
         }
+
 
         val startTime = System.currentTimeMillis()
         val endTime = System.currentTimeMillis()
     }
-
-
+    private fun setFrag(fragNum : Int){
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        when (fragNum){
+            0-> {
+                fragmentTransaction.replace(R.id.fragContainer, Todo()).commit()
+            }
+            1-> {
+                fragmentTransaction.replace(R.id.fragContainer, Calendar()).commit()
+            }
+            2-> {
+                fragmentTransaction.replace(R.id.fragContainer, Statistics()).commit()
+            }
+            3-> {
+                fragmentTransaction.replace(R.id.fragContainer, Study()).commit()
+            }
+            4-> {
+                fragmentTransaction.replace(R.id.fragContainer, Setting()).commit()
+            }
+        }
     }
+
+
+}
 
