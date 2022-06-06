@@ -29,11 +29,8 @@ class TodoFragment : Fragment() {
         // barTopTodo textView 수정
         binding.barTopTodo.text = "안녕"
 
-        val now: Long = System.currentTimeMillis()
-        val date = Date(now)
-        val dateFormat = SimpleDateFormat("yyyy-mm-dd",Locale("ko","KR"))
-        val stringTime = dateFormat.format(date)
-        val longTime = dateFormat.parse(stringTime).time
+
+
 
 
         //

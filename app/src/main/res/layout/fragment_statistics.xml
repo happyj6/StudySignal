@@ -22,29 +22,58 @@
         />
 
     <ScrollView
-        android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barTopTodo">
 
+
         <LinearLayout
+            android:id="@+id/chartLin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:orientation="vertical"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absolutey="8dp"
-            >
+            app:layout_constraintLeft_toLeftOf="parent">
 
+            <TextView
+                android:id="@+id/averageTv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="연간 성취율 그래프 "
+                android:textSize="20dp"
+                />
             <!--꺾은선 그래프-->
             <com.github.mikephil.charting.charts.LineChart
                 android:id="@+id/lineChart1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/maincolr"
+                android:text="분석내용 넣기"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/averageTv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="주간 성취율 그래프 "
+                android:textSize="20dp" />
+            <!--꺾은선 그래프-->
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
         </LinearLayout>
     </ScrollView>
+
+
 
 
 
