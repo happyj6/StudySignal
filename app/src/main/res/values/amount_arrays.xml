@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="amount">
+        <item>개</item>
+        <item>문제</item>
+        <item>장</item>
+        <item>쪽</item>
+        <item>챕터</item>
+    </string-array>
+</resources>
+

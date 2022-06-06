@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.subject.Add_subjectActivity">
+
+    <TextView
+        android:id="@+id/barTopAddSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="과목 생성하기"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:background="@color/maincolr"
+        />
+
+    <TextView
+        android:id="@+id/nameSubjectTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/barTopAddSubject"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:text="과목명 : "
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/nameSubjectEt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/barTopAddSubject"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@id/nameSubjectTv"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/weekdaysTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameSubjectTv"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:text="요일"
+        android:textSize="20dp"
+        />
+
+    <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+        android:id="@+id/group_weekdays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/weekdaysTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:tbgChildSpacing="auto"
+        tools:ignore="MissingConstraints">
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"/>
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"/>
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/Tue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"/>
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/Wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"/>
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/Thur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"/>
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/Fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"/>
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/Sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"/>
+    </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+
+    <Button
+        android:id="@+id/timeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/group_weekdays"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/maincolr"
+        android:text="시간학습"
+        />
+    <Button
+        android:id="@+id/equalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/group_weekdays"
+        app:layout_constraintLeft_toRightOf="@+id/timeBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/maincolr"
+        android:text="반복학습"
+        />
+    <Button
+        android:id="@+id/divideBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/group_weekdays"
+        app:layout_constraintLeft_toRightOf="@id/equalBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/maincolr"
+        android:text="분배학습"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/timeBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="저장"
+        android:textSize="20dp"
+        android:backgroundTint="@color/maincolr"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
