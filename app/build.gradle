@@ -65,4 +65,7 @@ dependencies {
     implementation 'com.nex3z:toggle-button-group:1.2.3'
     // 시간가져오기
     implementation 'com.jakewharton.threetenabp:threetenabp:1.3.0'
+
+    //차트
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
