@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
 
 //        binding.bvMain.isEnabled = false
         // bvMain(bottomNavigation)과 fragment(todo,calendar,statistics, study, setting) 연결
+        setFrag(0)
         binding.bvMain.setOnItemSelectedListener { position ->
             Log.d("happy","position : $position")
             if(position == MENU.TODO.value) {

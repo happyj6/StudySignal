@@ -37,6 +37,9 @@ android {
     buildFeatures {
         viewBinding true
     }
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {
@@ -60,4 +63,6 @@ dependencies {
 
     //togglebutton
     implementation 'com.nex3z:toggle-button-group:1.2.3'
+    // 시간가져오기
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.3.0'
 }
